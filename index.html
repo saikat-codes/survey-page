@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+     <h1 id='title'>Saikat's Survey Form</h1>
+     <p id='description'>This Survey Form is one of my Web Design Project. This will help me to understand how forms work.</p>
+    </header>
+    <form id='survey-form'>
+      <div class='form-body'>
+        <div class='form-name inputs'>
+         <label id="name-label" class="labels" for="name">
+          Name
+         </label>
+         <input type="text" name="name" id="name" class="css-input" placeholder="Enter your name" required="">
+        </div>
+        <div class='form-email inputs'>
+            <label id="email-label" class="labels" for="email">Email</label>
+          <input type="email" name="email" id="email" class="css-input" placeholder="Enter your email" required="">
+        </div>
+        <div class="form-number inputs">
+             <label id="number-label" class="labels" for="number">Age (optional)</label>
+          <input type="number" name="number" id="number" class="css-input" placeholder="Enter your Age" max="69" min="18">
+        </div>
+        <div class="form-dropdown inputs">
+            <p class="css-para">What is your current role?</p>
+            <select name="role" id="dropdown" class="css-input" required="">
+                <option value="default" disabled="" selected="">Select your role</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-radio inputs">
+            <p class="css-para">Do you love coding?</p>
+            <label for="form-radio" class="css-radio">
+                <input type="radio" name="user-love" value="definitely" checked="">Definitely 
+            </label>
+            <label for="form-radio"class="css-radio">
+                <input type="radio" name="user-love" value="maybe">Maybe
+            </label>
+            <label for="form-radio" class="css-radio">
+                <input type="radio" name="user-love" value="no">Not sure 
+            </label>
+        </div>
+        <div class="form-dropdown inputs">
+            <p class="css-para">What is your favourite language?</p>
+            <select name="role" id="dropdown" required="" class="css-input">
+                <option value="default" disabled="" selected="">Select your language</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+    <div class="form-checkbox">
+        <p class="css-para">Which area of coding are you specializing in?</p>
+        <div class="checkbox-option">
+         <input type="checkbox" id="frontend" name="user-checkbox" value="frontend">
+         <label for="frontend">Frontend Web Dev</label>
+        </div>
+        <div class="checkbox-option">
+          <input type="checkbox" id="backend" name="user-checkbox" value="backend">
+          <label for="backend">Backend Web Dev</label>
+        </div>
+        <div class="checkbox-option">
+         <input type="checkbox" id="fullstack" name="user-checkbox" value="fullstack">
+         <label for="fullstack">Fullstack Web Dev</label>
+       </div>
+       <div class="checkbox-option">
+         <input type="checkbox" id="other" name="user-checkbox" value="other">
+         <label for="other">Other</label>
+       </div>
+    </div>
+
+        <div class="form-comments inputs">
+            <p class="css-para">Any comments? (optional)</p>
+            <textarea name="comment" id="comment" class="css-input" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="submit-btn">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <footer>
+        <p class="foot">made with ❤️ by <a href="https://www.linkedin.com/in/saikat-das-698a5b2a2/" target="_blank">@saikat</a></p>
+    </footer>
+    
+</body>
+</html>
