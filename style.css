@@ -157,3 +157,22 @@ select.css-input {
   font-style: normal;
   font-size: 14px;
 }
+
+@media (max-width: 600px) {
+    .form-body {
+        width: 700px;       
+        max-width: none;   
+        height: auto;
+        margin: 2em 4em;      
+    }
+
+    #survey-form {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    header {
+      padding: 1.75em;
+    }
+}
